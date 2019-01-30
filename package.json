@@ -1,0 +1,62 @@
+{
+  "name": "qtcg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.4.4",
+    "es6-promise": "^4.2.4",
+    "jquery": "^3.3.1",
+    "js-md5": "^0.7.3",
+    "mint-ui": "^2.2.13",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.0.3",
+    "url-search-params-polyfill": "^4.0.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vue-validator": "^3.0.0-alpha.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/js-md5": "^0.4.2",
+    "@vue/cli-plugin-babel": "^3.0.0-rc.5",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
+    "@vue/cli-service": "^3.0.0-rc.5",
+    "babel-plugin-component": "^1.1.1",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

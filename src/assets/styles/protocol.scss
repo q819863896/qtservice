@@ -1,0 +1,192 @@
+.title{
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #51C4D4;
+  font-size: 18px;
+}
+
+.sub_title{
+  height: 26px;
+  border-bottom: 1px solid #51C4D4;
+  background-color: #F8F7F6;
+  font-weight: 700;
+  .sub_title_content{
+    background-color: #51C4D4;
+    height: 21px;
+    width: 32%;
+    line-height: 21px;
+    overflow: hidden;
+    /*float: left;*/
+    /* transform: skew(30deg, 0deg); */
+    /* margin-left: -15px; */
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 5px;
+    position: relative;
+    &:after{
+      content: "";
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: #F8F7F6;
+      transform: skew(30deg, 0);
+      -webkit-transform: skew(30deg, 0);
+      position: absolute;
+      top: 0;
+      right: -20px;
+    }
+  }
+}
+
+.sub_content{
+  //height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+  /*
+    height: 15px;
+    padding: 13px 25px 13px 25px;
+  */
+  background-color: #FFF;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+  .sub_content_title{
+    float: left;
+    color: #B6B6B6;
+  }
+  .sub_content_info{
+    float: right;
+    text-align: right;
+    width: 60%;
+    overflow-x: scroll;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+    //white-space: nowrap;
+    .sub_content_info_txt{
+      width: 100%;
+      white-space: nowrap;
+      position: relative;
+      &.active{
+        &::after{
+          content: "";
+          width: 20px;
+          height: 20px;
+          background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABP0lEQVQ4T52Rq04DURCG589pgayowKN4hEpyTtYjQEEQCEIwhBcgeEgwCBQ4gsNhcCTNdEvVyhW8AIpVDZCy3RlymrbZbtmWMG4u3z83UMmcczsishxF0X05V/ZRDIRhWMvz/APAUpZlQbfb/ZonUIZXRGQI5Hne6HQ6vX/BqroH4I2ZuUqgsrOq9gAEqnqpqoii6IyIpChUCReKBkRUU9VjAI00Ta+SJPn2+b/AQx1V/fSTENEmMz9NYGvtFhENjDHP44NV7amq2+12+3EIN5vNehAE/j11Ijoloot5F56CfaG19hyABxfaDDwSuAZwspAm2mDml5mDWWtvARzN2bdnjFlttVr+A9PX9r619g7AfoXALjM/jHNTrxoFjXPuhogOx0WjNx0Uwd86Txo659ZEZF1E3vv9/mscx1l5mh/jlKEQ8x5xsAAAAABJRU5ErkJggg==') no-repeat center;
+          display: block;
+          position: absolute;
+          right: -5px;
+          //top:50%;
+          bottom:0;
+          margin-top: -10px;
+          animation: toRightAni 1s infinite;
+          -webkit-animation: toRightAni 1s infinite;
+        }
+      }
+    }
+  }
+}
+
+/*附件下载*/
+.file_info{
+  border-top: 1px solid #51C4D4;
+  background-color: #FFF;
+  /* height: 60px; */
+  border-bottom: 1px solid #DDD;
+  .file_info_title{
+    width: 85%;
+    color: #B6B6B6;
+    margin: 5px auto;
+  }
+  .file_list{
+    width: 85%;
+    margin: 5px auto 10px;
+  }
+}
+
+/*审批记录*/
+.suggest_infos{
+  width: 85%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin: 20px auto;
+  .suggest_infos_list{
+    width: 50%;
+    height: 25px;
+    display: block;
+    float: left;
+  }
+  .suggest_infos_message{
+    /*height: 25px;*/
+    p{
+      margin: 5px 0 0 0;
+      line-height: 20px;
+    }
+  }
+}
+
+.discount{
+  .discount_title{
+    width: 85%;
+    display: block;
+    margin: 20px auto 5px;
+  }
+
+  .discount_area{
+    width: 85%;
+    display: block;
+    margin: 0 auto 30px;
+    border: 1px solid #DDD;
+    background-color: #fff;
+  }
+
+  .button_groups{
+    width: 100%;
+    /*height: 50px;*/
+    background: #EEE;
+    border-top: 1px solid #DDD;
+    text-align: center;
+    margin: 0;
+    button{
+      width: 80px;
+      margin: 10px 20px;
+    }
+  }
+}
+
+/*审批意见*/
+.discount_collapse{
+  /*height: 27px;*/
+  .el-collapse-item{
+    .el-collapse-item__header{
+      height: 15px;
+      line-height: 15px;
+      padding: 13px 25px 13px 25px;
+      border-bottom: 1px solid #DDD;
+      color: #B6B6B6;
+    }
+
+    .el-collapse-item__content{
+      padding-bottom: 0;
+    }
+
+    .el-collapse-item__arrow{
+      line-height: 15px;
+    }
+  }
+}
+
+/* 动画 */
+
+@keyframes toRightAni{
+  0% {right:-5rpx}
+  90% {right:10px;}
+  100%{right:-5rpx;}
+}
+@-webkit-keyframes toRightAni{
+  0% {right:-5rpx;}
+  90% {right:10px;}
+  100%{right:-5rpx;}
+}
